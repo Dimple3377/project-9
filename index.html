@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <link rel="manifest" href="/manifest.json">
-
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nina Carducci - Photographe</title>
-    <!-- Titre de la page ajouté ici -->
-    <meta
-      name="description"
-      content="Explorez le portfolio de Nina Carducci, photographe spécialisée dans les mariages, portraits et événements en Île-de-France."
-    />
-    <!-- Meta description ajoutée ici -->
+    <meta name="description" content="Explorez le portfolio de Nina Carducci, photographe spécialisée dans les mariages, portraits et événements en Île-de-France." />
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Nina Carducci - Photographe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="website" />
+    <meta property="og:image" content="http://www.ninacarducciphotography.com/assets/images/share.jpg" />
+    <meta property="og:description" content="Explorez le portfolio de Nina Carducci, photographe spécialisée dans les mariages, portraits et événements en Île-de-France." />
+    <meta property="og:site_name" content="Nina Carducci Photography" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NinaCarducciPhoto" />
+    <meta name="twitter:title" content="Nina Carducci - Photographe" />
+    <meta name="twitter:description" content="Explorez le portfolio de Nina Carducci, photographe spécialisée dans les mariages, portraits et événements en Île-de-France." />
+    <meta name="twitter:image" content="pages" />
+
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" />
+    
+    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+    <script src="./assets/maugallery.js" defer></script>
+    <script src="./assets/scripts.js" defer></script>
+
+     <!-- Schema.org JSON-LD -->
+     
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci, photographe",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "postalCode": "33200",
+          "addressLocality": "Bordeaux"
+        },
+        "telephone": "+33 5 56 67 78 89",
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "priceRange": "50-400€",
+        "image": "assets/images/camera.webp"
+      }
+    </script>
+</head>
+
+
   <body>
     <div class="top-header">
       <h1 class="name">Nina Carducci</h1> <!-- Changé en h1 pour indiquer le titre principal -->
@@ -82,21 +107,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
+              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
               alt="Vue urbaine capturée par Ryoji Iwata"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg"
+              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
               alt="Paysage tranquille par Nicholas Green"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
+              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
               class="d-block w-100"
               alt="Portrait émotionnel par Edward Cisneros"
             />
@@ -125,7 +150,7 @@
     <section id="about">
       <h2>A propos de moi</h2> <!-- Changé en h2 pour les grandes sections -->
       <div class="picture left">
-        <img src="./assets/images/nina.png" alt="Nina Carducci souriante" />
+        <img src="./assets/images/nina.webp" alt="Nina Carducci souriante" />
       </div>
       <div id="about-me">
       <p>
@@ -303,7 +328,7 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.png" alt="Icône de caméra" />
+          <img src="./assets/images/camera.webp" alt="Icône de caméra" />
         </div>
       </div>
     </section>
