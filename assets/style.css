@@ -99,7 +99,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #5a5a2d; /* Plus foncé pour un meilleur contraste */
+  background-color: #5a5a2d;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -154,7 +154,7 @@ body {
 #services {
   margin: auto;
   background-color: #a8d5d8;
-  color: #2c3e50; /* Texte plus foncé pour un meilleur contraste */
+  color: #2c3e50;
   position: relative;
 }
 #services .container::before {
